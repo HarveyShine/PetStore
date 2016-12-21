@@ -14,11 +14,13 @@
 	<context:annotation-config />
 	<!-- 设定Spring 去哪些包中找Annotation -->
 	<context:component-scan base-package="homework3" />
-	<bean id="bookInfoBean" class="homework3.bean.BookInfoBean">
+	<bean id="businessInfo" class="pet.model.BusinessInfo">
 	</bean>
-	<bean id="orderDetailBean" class="homework3.bean.OrderDetailBean">
+	<bean id="careInfo" class="pet.model.CareInfo">
 	</bean>
-	<bean id="orderInfoBean" class="homework3.bean.OrderInfoBean">
+	<bean id="fosteInfo" class="pet.model.FosteInfo">
+	</bean>
+	<bean id="orderInfo" class="pet.model.OrderInfo">
 	</bean>
 	
 	<!--数据源的配置 -->
