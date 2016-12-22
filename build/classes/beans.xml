@@ -22,7 +22,8 @@
 	</bean>
 	<bean id="orderInfo" class="pet.model.OrderInfo">
 	</bean>
-	
+	<bean id="petInfo" class="pet.model.PetInfo">
+	</bean>
 	<!--数据源的配置 -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">

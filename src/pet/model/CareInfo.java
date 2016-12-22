@@ -26,5 +26,6 @@ public class CareInfo extends BusinessInfo {
 	}
 
 	public CareInfo() {
+		super();
 	}
 }
