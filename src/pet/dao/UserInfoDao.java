@@ -5,7 +5,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import pet.model.UserInfo;
 
-
 /**
  * 负责User的增删改查
  * 
@@ -28,8 +27,8 @@ public class UserInfoDao {
 	 * @return
 	 */
 	public int insert(UserInfo user) {
-		String sql = "insert into dbo.User (userPhoneNumber, userName, userSex, userIcon, regerstTime) values(? ,?, ?, ?, ?)";
-		int ret = jdbcTemplate.update(sql, user.getUserPhoneNumber(), user.getUserName(),
+		String sql = "insert into Users(userPhoneNumber, kindId, userName, userSex, userIcon, regerstTime) values(?, ?, ?, ?, ?, ?)";
+		int ret = jdbcTemplate.update(sql, user.getUserPhoneNumber(), user.getKindId(), user.getUserName(),
 				user.getUserSex(), user.getUserIcon(), user.getRegerstTime());
 		System.out.println(ret);
 		return ret;
