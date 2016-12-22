@@ -13,7 +13,7 @@
 	<!-- 打开Spring的Annotation支持 -->
 	<context:annotation-config />
 	<!-- 设定Spring 去哪些包中找Annotation -->
-	<context:component-scan base-package="homework3" />
+	<context:component-scan base-package="pet" />
 	<bean id="businessInfo" class="pet.model.BusinessInfo">
 	</bean>
 	<bean id="careInfo" class="pet.model.CareInfo">
@@ -23,6 +23,18 @@
 	<bean id="orderInfo" class="pet.model.OrderInfo">
 	</bean>
 	<bean id="petInfo" class="pet.model.PetInfo">
+	</bean>
+	<bean id="serverInfo" class="pet.model.ServerInfo">
+	</bean>
+	<bean id="treatInfo" class="pet.model.TreatInfo">
+	</bean>
+	<bean id="userInfo" class="pet.model.UserInfo">
+	</bean>
+	<bean id="userKindInfo" class="pet.model.UserKindInfo">
+	</bean>
+	<bean id="workerInfo" class="pet.model.WorkerInfo">
+	</bean>
+	<bean id="workerKindInfo" class="pet.model.WorkerKindInfo">
 	</bean>
 	<!--数据源的配置 -->
 	<bean id="dataSource"

@@ -2,12 +2,15 @@ package pet.model;
 
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
 /**
  * 用户基本信息表dbo.User对应的实体类
  * 
  * @author zephyr
  *
  */
+@Component("userInfo")
 public class UserInfo {
 	private String userPhoneNumber; // 用户电话号码
 	private int kindId;// 用户类别

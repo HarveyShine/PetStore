@@ -1,11 +1,14 @@
 package pet.model;
 
+import org.springframework.stereotype.Component;
+
 /**
  * dbo.UserKind 用户类别，不同的用户类别享受不同的折扣
  * 
  * @author zephyr
  *
  */
+@Component("userKindInfo")
 public class UserKindInfo {
 	private int kindId;// 类别号（Pi）
 	private String kindIntro;// 简介

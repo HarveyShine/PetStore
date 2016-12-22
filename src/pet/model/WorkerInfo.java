@@ -2,12 +2,15 @@ package pet.model;
 
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
 /**
  * 宠物店元员工dbo.Worker
  * 
  * @author zephyr
  *
  */
+@Component("workerInfo")
 public class WorkerInfo {
 	private String workerName;// 员工姓名
 	private int workKindId;// 员工类别号（外码）
