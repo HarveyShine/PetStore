@@ -13,7 +13,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		UserInfo userInfo = new UserInfo("15161166610", 1, "yanghui", "男", "123",
-				new java.sql.Date(DateUtils.strToDate("2013-10-23", "yyyy-MM-dd").getTime()));
+				new java.sql.Date(DateUtils.strToDate("2013-10-23", "yyyy-MM-dd").getTime()), "123");
 		BeanFactory factory = SpringUtils.getBeanFactory();
 		UserInfoDao dao = factory.getBean(UserInfoDao.class);
 		dao.insert(userInfo);

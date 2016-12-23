@@ -18,6 +18,15 @@ public class UserInfo {
 	private String userSex;// 用户性别
 	private String userIcon;// 用户头像
 	private Date regerstTime;// 用户注册时间
+	private String password;
+	
+	public String getPassword() {
+		return password;
+	}
+	
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public String getUserPhoneNumber() {
 		return userPhoneNumber;
@@ -68,7 +77,7 @@ public class UserInfo {
 	}
 
 	public UserInfo(String userPhoneNumber, int kindId, String userName, String userSex, String userIcon,
-			Date regerstTime) {
+			Date regerstTime, String password) {
 		super();
 		this.userPhoneNumber = userPhoneNumber;
 		this.kindId = kindId;
@@ -76,6 +85,7 @@ public class UserInfo {
 		this.userSex = userSex;
 		this.userIcon = userIcon;
 		this.regerstTime = regerstTime;
+		this.password = password;
 	}
 
 	public UserInfo() {

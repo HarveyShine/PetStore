@@ -33,4 +33,15 @@ public class UserInfoDao {
 		System.out.println(ret);
 		return ret;
 	}
+	
+	/**
+	 * 根据电话号码查询用户密码
+	 * @param userPhoneNumber
+	 * @return
+	 */
+	public String selectPassW(String userPhoneNumber){
+		String sql = "select password from dbo.Users where userPhoneNumber = ?";
+		String PassW = jdbcTemplate.queryForObject(sql, new Object[]{userPhoneNumber},String.class);
+		return PassW;
+	}
 }
