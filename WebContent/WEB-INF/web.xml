@@ -13,23 +13,30 @@
 			<param-value>WEB-INF/springmvc-servlet.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
+		<multipart-config>
+			<location>/uploads</location>
+			<max-file-size>2097152</max-file-size>
+			<max-request-size>4194304</max-request-size>
+		</multipart-config>
 	</servlet>
 	<!-- Servlet PetStore处理所有用户请求 -->
 	<servlet-mapping>
 		<servlet-name>PetStore</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
+
 	<!-- 创建监听器ContextLoaderListener -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	<!-- 利用监听器ContextLoaderListener创建模型层上下文-->
+	<!-- 利用监听器ContextLoaderListener创建模型层上下文 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath*:beans.xml</param-value>
 	</context-param>
-	
+
+
+
 	<!-- 字符处理 -->
 	<filter>
 		<filter-name>CharacterFilter</filter-name>
