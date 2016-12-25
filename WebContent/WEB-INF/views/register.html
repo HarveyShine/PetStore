@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>register</title>
+		<link rel="stylesheet" href="../css/register.css" />
+		<script type="text/javascript" src="../jquery1.9.1/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="../js/header.js" ></script>
+	</head>
+
+	<body onload="loadHeader();">
+		<div id="header"></div>
+		<br />
+		<h1><strong>会员注册</strong></h1>
+		<hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+		<div>
+			<p>请输入电话号码</p>
+			<div><input class="inputText" type="text" id="phoneNumber_input" /></div>
+		</div>
+		<br />
+		<div>
+			<p>请输入姓名</p>
+			<div><input class="inputText" type="text" id="userName_input" /></div>
+		</div>
+		<br />
+		<div>
+			<p>请选择性别</p>
+			<div>男：
+				<input type="radio" checked="checked" name="Sex" value="male" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;女：
+				<input type="radio" name="Sex" value="female" />
+				</form>
+			</div>
+		</div>
+		<br />
+		<div>
+			<p>请输入密码</p>
+			<div><input class="inputText" type="text" id="password_input" /></div>
+		</div>
+		<br />
+		<div>
+			<p>请确认密码</p>
+			<div><input class="inputText" type="text" id="confirmPassword_input" /></div>
+		</div>
+	</body>
+
+</html>
